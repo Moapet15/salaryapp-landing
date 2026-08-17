@@ -1,58 +1,217 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Eliminar el compte | SalaryApp</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111111;
+      color: white;
+      padding: 22px 24px;
+    }
+
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #111111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #111111;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #4b5563;
+    }
+
+    ul {
+      margin: 12px 0 20px 22px;
+      color: #4b5563;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .warning {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 24px 0;
+      color: #9a3412;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background: #111111;
+      color: white;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .button:hover {
+      opacity: 0.82;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 25px auto;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+
+  <header>
+    <div class="header-content">
+      <div class="brand">SalaryApp</div>
+    </div>
+  </header>
+
   <main>
-    <h1>Eliminar el compte de SalaryApp</h1>
+    <section class="card">
 
-    <p>
-      Els usuaris de SalaryApp poden sol·licitar l'eliminació permanent
-      del seu compte i de les dades associades.
-    </p>
+      <h1>Eliminar el compte de SalaryApp</h1>
 
-    <h2>Des de SalaryApp</h2>
+      <p>
+        Els usuaris de SalaryApp poden eliminar permanentment
+        el seu compte i les dades associades.
+      </p>
 
-    <p>
-      Inicia sessió, ves a la pantalla principal i selecciona
-      <strong>“Eliminar el meu compte”</strong>.
-    </p>
+      <div class="warning">
+        L'eliminació del compte és permanent i no es pot desfer.
+      </div>
 
-    <h2>Si no pots accedir a l'aplicació</h2>
+      <h2>Eliminar el compte des de l'aplicació</h2>
 
-    <p>
-      Envia una sol·licitud des de l'adreça electrònica associada al teu
-      compte de SalaryApp:
-    </p>
+      <p>
+        Inicia sessió a SalaryApp i, des de la pantalla principal,
+        selecciona l'opció <strong>“Eliminar el meu compte”</strong>.
+      </p>
 
-    <p>
-      <a href="mailto:EL_TEU_CORREU?subject=Eliminació%20del%20compte%20SalaryApp">
-        Sol·licitar l'eliminació del compte
+      <p>
+        L'aplicació et demanarà confirmació abans de completar
+        l'eliminació.
+      </p>
+
+
+      <h2>Si no pots accedir a SalaryApp</h2>
+
+      <p>
+        Si no pots iniciar sessió, pots sol·licitar l'eliminació
+        del compte enviant-nos un correu electrònic.
+      </p>
+
+      <p>
+        Per poder identificar el compte, envia la sol·licitud
+        preferiblement des de l'adreça electrònica associada
+        al teu usuari de SalaryApp.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:franquetandreu@gmail.com?subject=Eliminació%20del%20compte%20SalaryApp"
+      >
+        Sol·licitar eliminació del compte
       </a>
-    </p>
 
-    <h2>Dades que s'eliminen</h2>
 
-    <ul>
-      <li>Compte d'usuari i dades d'accés associades.</li>
-      <li>Empreses creades per l'usuari.</li>
-      <li>Conceptes salarials.</li>
-      <li>Períodes salarials.</li>
-      <li>Dades associades als càlculs salarials.</li>
-    </ul>
+      <h2>Dades que s'eliminen</h2>
 
-    <h2>Conservació de dades</h2>
+      <p>
+        Quan s'elimina un compte de SalaryApp, s'eliminen
+        les dades associades, incloent:
+      </p>
 
-    <p>
-      SalaryApp no conserva intencionadament les dades del compte després
-      de completar-ne l'eliminació, excepte quan sigui necessari conservar
-      determinada informació per obligació legal, seguretat o prevenció
-      del frau.
-    </p>
+      <ul>
+        <li>Compte d'usuari.</li>
+        <li>Nom i adreça electrònica associats al compte.</li>
+        <li>Empreses creades per l'usuari.</li>
+        <li>Conceptes salarials.</li>
+        <li>Períodes salarials.</li>
+        <li>Dades utilitzades per als càlculs salarials.</li>
+      </ul>
+
+
+      <h2>Conservació de dades</h2>
+
+      <p>
+        SalaryApp no conserva intencionadament les dades del compte
+        després de completar-ne l'eliminació, excepte quan determinada
+        informació s'hagi de conservar per obligació legal, seguretat
+        o prevenció del frau.
+      </p>
+
+    </section>
   </main>
+
+  <footer>
+    © 2026 SalaryApp
+  </footer>
+
 </body>
 </html>
