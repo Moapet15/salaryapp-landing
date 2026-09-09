@@ -1,67 +1,85 @@
 <!doctype html>
-<html lang="ca">
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Política de privacitat de SalaryApp.">
-  <title>Política de privacitat — SalaryApp</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de privacidad | SalaryApp</title>
+  <meta name="description" content="Política de privacidad de SalaryApp." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://salaryapp-landing.vercel.app/privacy.html" />
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .legal { max-width: 820px; padding: 70px 0 100px; }
+    .legal h1 { font-size: clamp(42px,7vw,72px); letter-spacing:-.055em; margin:0 0 18px; }
+    .legal .updated { color:var(--muted); margin-bottom:44px; }
+    .legal h2 { margin-top:38px; font-size:24px; letter-spacing:-.03em; }
+    .legal p, .legal li { color:#444; line-height:1.75; }
+    .legal a { text-decoration:underline; text-underline-offset:3px; }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">SalaryApp</a>
-    <nav class="nav"><a href="index.html">Inici</a></nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">S</span><span>SalaryApp</span>
+      </a>
+      <div style="margin-left:auto">
+        <a class="button button-small button-dark" href="./index.html">Volver</a>
+      </div>
+    </div>
+  </header>
 
-<main class="section">
-  <div class="container legal">
+  <main class="container legal">
     <span class="eyebrow">Legal</span>
-    <h1>Política de privacitat</h1>
-    <p class="updated">Última actualització: 12 d’agost de 2026</p>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 9 de septiembre de 2026</p>
 
     <h2>1. Responsable</h2>
-    <p>SalaryApp és una aplicació de finances personals orientada a l’estimació salarial. Per consultes sobre privacitat o protecció de dades, pots contactar a <a href="mailto:franquetandreu@gmail.com">franquetandreu@gmail.com</a>.</p>
+    <p>SalaryApp es una aplicación de finanzas personales orientada a la estimación salarial. Para consultas sobre privacidad o protección de datos puedes contactar en <a href="mailto:franquetandreu@gmail.com">franquetandreu@gmail.com</a>.</p>
 
-    <h2>2. Dades que tracta SalaryApp</h2>
-    <p>Per prestar el servei, SalaryApp pot tractar dades de compte com el nom i el correu electrònic, així com dades introduïdes voluntàriament per l’usuari relacionades amb empreses, conceptes salarials, períodes i valors utilitzats per calcular estimacions.</p>
+    <h2>2. Datos tratados</h2>
+    <p>Para prestar el servicio, SalaryApp puede tratar datos de cuenta como nombre y correo electrónico, así como la información introducida voluntariamente por el usuario sobre empresas, conceptos salariales, periodos y valores utilizados para realizar estimaciones.</p>
 
-    <h2>3. Finalitat</h2>
-    <p>Les dades s’utilitzen per permetre l’autenticació de l’usuari, conservar la seva configuració, mostrar l’historial salarial i calcular estimacions de salari brut, deduccions i salari net.</p>
+    <p>SalaryApp también puede registrar información técnica y de uso necesaria para analizar el funcionamiento del servicio, como identificadores técnicos aleatorios de instalación y sesión, plataforma, versión de la aplicación y eventos funcionales —por ejemplo, apertura de la aplicación, inicio o finalización de determinados flujos y errores técnicos—. Estos eventos no deben incluir contraseñas ni el contenido completo de la nómina.</p>
 
-    <h2>4. Pagaments i aportacions voluntàries</h2>
-    <p>Les aportacions voluntàries es processen mitjançant Stripe. SalaryApp no emmagatzema directament les dades completes de la targeta o del mètode de pagament. Stripe tracta les dades necessàries per processar el pagament d’acord amb les seves pròpies condicions i política de privacitat.</p>
+    <h2>3. Finalidades</h2>
+    <ul>
+      <li>Permitir el registro y la autenticación.</li>
+      <li>Conservar la configuración y los periodos salariales del usuario.</li>
+      <li>Calcular y mostrar estimaciones de salario.</li>
+      <li>Detectar errores, medir el uso de funciones y mejorar SalaryApp.</li>
+      <li>Atender solicitudes de soporte y derechos de privacidad.</li>
+    </ul>
 
-    <h2>5. Conservació</h2>
-    <p>Les dades es conserven mentre el compte sigui actiu o mentre siguin necessàries per prestar el servei. Quan sigui aplicable, l’usuari podrà sol·licitar l’eliminació del seu compte i de les dades associades.</p>
+    <h2>4. Pagos y aportaciones voluntarias</h2>
+    <p>Cuando se habiliten aportaciones voluntarias, estas podrán procesarse mediante un proveedor de pagos externo. SalaryApp no almacena directamente los datos completos de la tarjeta o método de pago.</p>
 
-    <h2>6. Seguretat</h2>
-    <p>SalaryApp aplica mesures raonables de seguretat per protegir l’accés al compte i a les dades emmagatzemades, incloent autenticació i comunicacions segures en entorns de producció.</p>
+    <h2>5. Conservación</h2>
+    <p>Los datos se conservan mientras la cuenta permanezca activa o durante el tiempo necesario para prestar el servicio y cumplir las obligaciones aplicables. El usuario puede solicitar la eliminación de su cuenta y de los datos asociados cuando corresponda.</p>
 
-    <h2>7. Compartició de dades</h2>
-    <p>No es venen dades personals. Determinats proveïdors tecnològics poden tractar dades únicament quan sigui necessari per prestar el servei, com ara allotjament, infraestructura de base de dades o processament de pagaments.</p>
+    <h2>6. Seguridad</h2>
+    <p>SalaryApp aplica medidas razonables de seguridad para proteger el acceso al servicio y a la información almacenada, incluyendo autenticación y comunicaciones cifradas en tránsito en los entornos de producción.</p>
 
-    <h2>8. Drets</h2>
-    <p>Pots sol·licitar accés, rectificació, supressió o altres drets que et corresponguin d’acord amb la normativa aplicable escrivint al correu de contacte indicat.</p>
+    <h2>7. Compartición de datos</h2>
+    <p>SalaryApp no vende datos personales. Determinados proveedores tecnológicos pueden tratar información únicamente cuando sea necesario para prestar el servicio, por ejemplo servicios de alojamiento, infraestructura de base de datos, correo transaccional o procesamiento de pagos.</p>
 
-    <h2>9. Menors</h2>
-    <p>SalaryApp no està dirigida específicament a menors d’edat.</p>
+    <h2>8. Derechos</h2>
+    <p>Puedes solicitar acceso, rectificación, supresión u otros derechos que te correspondan conforme a la normativa aplicable escribiendo al correo de contacto indicado.</p>
 
-    <h2>10. Canvis en aquesta política</h2>
-    <p>Aquesta política es pot actualitzar per reflectir canvis en el servei o en els requisits legals. La data d’actualització apareixerà sempre en aquesta pàgina.</p>
+    <h2>9. Menores</h2>
+    <p>SalaryApp no está dirigida específicamente a menores de edad.</p>
 
-    <div class="legal-note">
-      <strong>Avís:</strong> aquesta política és una base inicial. Abans de la publicació definitiva a Google Play cal revisar-la perquè coincideixi exactament amb les dades i proveïdors utilitzats en producció.
+    <h2>10. Cambios en esta política</h2>
+    <p>Esta política puede actualizarse para reflejar cambios en SalaryApp, sus proveedores o los requisitos legales aplicables. La fecha de actualización aparecerá siempre en esta página.</p>
+
+    <p><strong>Importante:</strong> SalaryApp ofrece estimaciones orientativas y no sustituye una nómina oficial ni asesoramiento laboral, fiscal o contable.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <span>© 2026 SalaryApp</span>
+      <a href="./index.html">Volver al inicio</a>
     </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <span>© 2026 SalaryApp</span>
-    <a href="index.html">Tornar a l’inici</a>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

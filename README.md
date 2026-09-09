@@ -1,20 +1,28 @@
-# SalaryApp Landing
+# SalaryApp Landing v2
 
-## Fitxers
-- index.html
-- privacy.html
-- styles.css
+Fitxers:
+- `index.html`: landing principal, castellà per defecte + selector català.
+- `styles.css`: estils responsive.
+- `script.js`: traduccions + analytics de landing.
+- `privacy.html`: política actualitzada, sense l'avís provisional.
+- `robots.txt`: permet indexació.
+- `sitemap.xml`: sitemap bàsic.
 
-## Publicar a Vercel
-1. Descomprimeix la carpeta.
-2. Crea un projecte nou a Vercel.
-3. Importa aquesta carpeta o un repositori GitHub que contingui aquests fitxers.
-4. Framework preset: Other.
-5. Build command: buit.
-6. Output directory: buit.
-7. Deploy.
+## Enllaços configurats
+- Google Play: https://play.google.com/store/apps/details?id=com.moapet15.salaryapp
+- Web app: https://salaryapp-mobile.vercel.app/
+- Analytics: https://conta-contes.vercel.app/api/analytics-salaryapp
 
-URL principal: https://<projecte>.vercel.app
-Privacitat: https://<projecte>.vercel.app/privacy.html
+## Events d'analytics
+- landing_view
+- play_store_click
+- web_app_click
+- landing_language_changed
 
-Pots utilitzar la URL principal com a Business website a Stripe.
+Tots porten `metadata.source = "landing"` per separar-los dels events de l'app.
+
+## Deploy
+Substitueix els fitxers actuals del repositori de la landing per aquests, commit + push. Si Vercel està connectat a GitHub, desplegarà automàticament.
+
+## Nota legal
+La política s'ha actualitzat perquè reflecteixi l'existència d'analytics tècnics. Cal mantenir-la alineada amb els proveïdors i tractaments reals de SalaryApp.
