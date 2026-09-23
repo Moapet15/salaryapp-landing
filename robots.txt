@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://salaryapp-landing.vercel.app/sitemap.xml
+Sitemap: https://salaryapp.moapetlabs.com/sitemap.xml
